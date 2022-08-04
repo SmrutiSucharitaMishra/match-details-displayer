@@ -1,0 +1,32 @@
+.container-fluid {
+  border: 1px solid rgba(0, 0, 0, 0.157) !important;
+  border-radius: 1rem;
+}
+.container-fluid {
+  position: relative;
+  width: 80vw;
+  height: auto;
+}
+.col-sm-6 {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.pre {
+  margin-top: 1rem;
+}
+.vs {
+  font-size: 2.5rem;
+}
+.container-fluid {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.348);
+}

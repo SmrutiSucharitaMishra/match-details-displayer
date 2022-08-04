@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">team 1 name</div>
+        <div class="col-sm-6">home/away</div>
+      </div>
+      <div>VS.</div>
+      <div class="row">
+         <h1>No Matches Scheduled.</h1>
+        <div class="col-sm-6">team 2 name</div>
+        <div class="col-sm-6">home away</div>
+
+
+
+          useEffect(() => {
+    return () => {
+      setMatches([
+        ...matches,
+        {
+          tn1: localStorage.getItem("tn1"),
+          tn2: localStorage.getItem("tn2"),
+          tv1: localStorage.getItem("tv1"),
+          tv2: localStorage.getItem("tv2"),
+          location: localStorage.getItem("location"),
+          matchType: localStorage.getItem("matchType"),
+          tournamentName: localStorage.getItem("tournamentname"),
+          start: localStorage.getItem("start"),
+          end: localStorage.getItem("end"),
+          comments: localStorage.getItem("comment"),
+        },
+      ]);
+      localStorage.removeItem("tn1");
+      localStorage.removeItem("tn2");
+      localStorage.removeItem("tv1");
+      localStorage.removeItem("tv2");
+      localStorage.removeItem("location");
+      localStorage.removeItem("matchType");
+      localStorage.removeItem("tournamentname");
+      localStorage.removeItem("start");
+      localStorage.removeItem("end");
+      localStorage.removeItem("comment");
+    };
+  }, []);
+
+      </div>
+    </div>
+  </body>
+</html>
